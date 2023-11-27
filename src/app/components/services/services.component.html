@@ -1,0 +1,54 @@
+<!-- Start Services Section -->
+<div id="services" class="section" *ngIf="servicesData">
+  <div class="section-header pt-2">
+    <h2>{{ servicesData.servicesTitle }}</h2>
+    <p>{{ servicesData.servicesDescription }}</p>
+  </div>
+  <div class="top-icon-box position-relative">
+    <div class="container position-relative">
+      <div class="row gy-4">
+        <div class="col-xl-4 col-md-4">
+          <div class="icon-box" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="icon">
+              <i class="{{ servicesData.servicesIcon1 }}"></i>
+            </div>
+            <h4 class="title">
+              <a href="" class="stretched-link">{{ servicesData.servicesHeader1 }}</a>
+            </h4>
+            <p>
+              {{ servicesData.servicesContent1 }}
+            </p>
+          </div>
+        </div>
+        <!--End Icon Box -->
+
+        <div class="col-xl-4 col-md-4">
+          <div class="icon-box" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="icon"><i class="{{ servicesData.servicesIcon2 }}"></i></div>
+            <h4 class="title">
+              <a href="" class="stretched-link">{{ servicesData.servicesHeader2 }}</a>
+            </h4>
+            <p>
+              {{ servicesData.servicesContent2 }}
+            </p>
+          </div>
+        </div>
+        <!--End Icon Box -->
+
+        <div class="col-xl-4 col-md-4">
+          <div class="icon-box" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="icon"><i class="{{ servicesData.servicesIcon3 }}"></i></div>
+            <h4 class="title">
+              <a href="" class="stretched-link">{{ servicesData.servicesHeader3 }}</a>
+            </h4>
+            <p>
+              {{ servicesData.servicesContent3 }}
+            </p>
+          </div>
+        </div>
+        <!--End Icon Box -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Services Section -->

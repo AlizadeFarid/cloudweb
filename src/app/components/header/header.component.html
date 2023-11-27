@@ -1,0 +1,32 @@
+<header id="header" class="header d-flex align-items-center sticked">
+  <div
+    class="container container-xl d-flex align-items-center justify-content-between"
+  >
+    <a href="index.html" class="logo d-flex align-items-center">
+      <h1>CloudWeb<span>.</span></h1>
+    </a>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a (click)="menuItemToggle()" href="#">Əsas səhifə</a></li>
+        <li><a (click)="menuItemToggle()" href="#about">Haqqqımızda</a></li>
+        <li><a (click)="menuItemToggle()" href="#services">Xidmətlər</a></li>
+        <li>
+          <a (click)="menuItemToggle()" href="#portfolio">Layihələrimiz</a>
+        </li>
+        <li><a (click)="menuItemToggle()" href="#team">Komanda</a></li>
+        <li><a (click)="menuItemToggle()" href="#contact">Əlaqə</a></li>
+      </ul>
+    </nav>
+    <!-- .navbar -->
+
+    <i
+      class="mobile-nav-toggle mobile-nav-show bi bi-list"
+      (click)="mobileNavToogle()"
+    ></i>
+    <i
+      class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"
+      (click)="mobileNavToogle()"
+    ></i>
+  </div>
+</header>
+<!-- End Header -->

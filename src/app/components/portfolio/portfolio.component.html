@@ -1,0 +1,65 @@
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section-grey" *ngIf="portfoliosData">
+  <div class="container" *ngIf="getPortfoliosData">
+    <div class="section-header">
+      <h2>{{ portfoliosData.portfoliosTitle }}</h2>
+      <p>{{ portfoliosData.portfoliosDescription }}</p>
+    </div>
+    <div
+      class="portfolio-isotope"
+      data-portfolio-filter="*"
+      data-portfolio-layout="masonry"
+      data-portfolio-sort="original-order"
+    >
+      <div class="row gy-4 portfolio-container">
+        <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap"  data-aos="zoom-in" data-aos-duration="1000">
+            <a
+              href="{{ portfoliosData.portfoliosLink1 }}"
+              target="_blank"
+              data-gallery="portfolio-gallery-app"
+              class="glightbox"
+              ><img
+                src="{{ portfoliosData.portfoliosImage1 }}?lang=az"
+                class="img-fluid"
+                alt=""
+            /></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+
+        <div class="col-xl-4 col-md-6 portfolio-item filter-product">
+          <div class="portfolio-wrap"  data-aos="zoom-in" data-aos-duration="1000">
+            <a
+              href="{{ portfoliosData.portfoliosLink2 }}"
+              data-gallery="portfolio-gallery-app"
+              class="glightbox"
+              ><img
+                src="{{ portfoliosData.portfoliosImage2 }}?lang=az"
+                class="img-fluid"
+                alt=""
+            /></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+
+        <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
+          <div class="portfolio-wrap"  data-aos="zoom-in" data-aos-duration="1000">
+            <a
+              href="{{ portfoliosData.portfoliosLink3 }}"
+              data-gallery="portfolio-gallery-app"
+              class="glightbox"
+              ><img
+                src="{{ portfoliosData.portfoliosImage3 }}?lang=az"
+                class="img-fluid"
+                alt=""
+            /></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+      </div>
+      <!-- End Portfolio Container -->
+    </div>
+  </div>
+</section>
+<!-- End Portfolio Section -->

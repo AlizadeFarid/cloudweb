@@ -1,0 +1,84 @@
+<!-- Our Team Section -->
+<section id="team" class="team sections-bg">
+  <div class="container" *ngIf="teamData">
+    <div class="section-header">
+      <h2>{{ teamData.teamTitle }}</h2>
+      <p>{{ teamData.teamDescription }}</p>
+    </div>
+
+    <div class="row gy-4">
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="member" data-aos="zoom-in" data-aos-duration="1000">
+          <img
+            src="{{ teamData.teamItem1Image }}?lang=az"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="social">
+            <a href="{{ teamData.teamItem1Social }}" target="_blank"
+              ><i class="bi bi-twitter"></i
+            ></a>
+          </div>
+          <h4>{{ teamData.teamItem1Name }}</h4>
+          <span>{{ teamData.teamItem1Position }}</span>
+        </div>
+      </div>
+      <!-- End Team Member -->
+
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="member" data-aos="zoom-in" data-aos-duration="1000">
+          <img
+            src="{{ teamData.teamItem2Image }}?lang=az"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="social">
+            <a href="{{ teamData.teamItem2Social }}" target="_blank">
+              <i class="bi bi-twitter"></i
+            ></a>
+          </div>
+          <h4>{{ teamData.teamItem2Name }}</h4>
+          <span>{{ teamData.teamItem2Position }}</span>
+        </div>
+      </div>
+      <!-- End Team Member -->
+
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="member" data-aos="zoom-in" data-aos-duration="1000">
+          <img
+            src="{{ teamData.teamItem3Image }}?lang=az"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="social">
+            <a href="{{ teamData.teamItem3Social }}" target="_blank">
+              <i class="bi bi-twitter"></i
+            ></a>
+          </div>
+          <h4>{{ teamData.teamItem3Name }}</h4>
+          <span>{{ teamData.teamItem3Position }}</span>
+        </div>
+      </div>
+      <!-- End Team Member -->
+
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="member" data-aos="zoom-in" data-aos-duration="1000">
+          <img
+            src="{{ teamData.teamItem4Image }}?lang=az"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="social">
+            <a href="{{ teamData.teamItem4Social }}" target="_blank">
+              <i class="bi bi-twitter"></i
+            ></a>
+          </div>
+          <h4>{{ teamData.teamItem4Name }}</h4>
+          <span>{{ teamData.teamItem4Position }}</span>
+        </div>
+      </div>
+      <!-- End Team Member -->
+    </div>
+  </div>
+</section>
+<!-- End Our Team Section -->
